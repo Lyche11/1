@@ -1,0 +1,11 @@
+body { font-family: Arial; margin: 0; }
+.header { background: #4682B4; color: white; padding: 1em; text-align: center; }
+.navbar { background: #B0C4DE; padding: 0.5em; text-align: center; }
+.navbar a { margin: 0 1em; text-decoration: none; color: black; }
+.container { display: flex; }
+.sidebar-left, .sidebar-right { width: 20%; padding: 1em; }
+.sidebar-left { background: #F0F8FF; }
+.sidebar-right { background: #FFFACD; }
+.content { width: 60%; padding: 1em; background: #FAFAD2; }
+.footer { background: #DCDCDC; text-align: center; padding: 1em; }
+input, textarea { width: 100%; margin: 0.5em 0; }
