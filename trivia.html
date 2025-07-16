@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trivia</title>
+  <title>Trivia – BMI Calculator</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="header">My Website</div>
+
   <div class="navbar">
     <a href="index.html">Home</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="trivia.html">Trivia</a>
   </div>
+
   <div class="container">
+    <!-- 左侧链接栏 -->
     <div class="sidebar-left">
       <h3>Useful Links</h3>
       <ul>
@@ -22,17 +25,24 @@
         <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
       </ul>
     </div>
+
+    <!-- 主要内容：BMI 计算器 -->
     <div class="content">
-      <h2>BMI Calculator</h2>
+      <h2>BMI Calculator</h2>
+
       <label for="height">Height (cm):</label>
-      <input type="number" id="height" placeholder="e.g. 170"><br>
+      <input type="number" id="height" placeholder="e.g. 170"><br>
+
       <label for="weight">Weight (kg):</label>
-      <input type="number" id="weight" placeholder="e.g. 60"><br><br>
-      <button onclick="calculateBMI()">Calculate BMI</button>
+      <input type="number" id="weight" placeholder="e.g. 60"><br><br>
+
+      <button onclick="calculateBMI()">Calculate BMI</button>
       <p id="bmi-result"></p>
     </div>
+
+    <!-- 右侧联系表单 -->
     <div class="sidebar-right">
-      <h3>Contact Me</h3>
+      <h3>Contact Me</h3>
       <form>
         <input type="text" placeholder="Name" /><br />
         <input type="email" placeholder="Email" /><br />
@@ -42,6 +52,9 @@
       </form>
     </div>
   </div>
-  <div class="footer">Created on 2025/07/16 | <a href="#">My Blog</a></div>
+
+  <div class="footer">
+    Created on 2025/07/16 | <a href="#">My Blog</a>
+  </div>
 </body>
 </html>
