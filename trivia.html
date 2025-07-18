@@ -27,18 +27,47 @@
     </div>
 
     <!-- 主要内容：BMI 计算器 -->
-    <div class="content">
-      <h2>BMI Calculator</h2>
+   <div class="content">
+  <h2>VKG Championship Quiz</h2>
 
-      <label for="height">Height (cm):</label>
-      <input type="number" id="height" placeholder="e.g. 170"><br>
+  <form id="quiz-form">
+    <!-- Q1 -->
+    <p><strong>1. Which event did VKG win?</strong></p>
+    <label><input type="radio" name="q1" value="0"> ALGS Year 3</label><br>
+    <label><input type="radio" name="q1" value="1"> Esports World Cup 2025</label><br>
+    <label><input type="radio" name="q1" value="0"> X Games 2024</label><br>
 
-      <label for="weight">Weight (kg):</label>
-      <input type="number" id="weight" placeholder="e.g. 60"><br><br>
+    <!-- Q2 -->
+    <p><strong>2. What was VKG’s final score in the grand final?</strong></p>
+    <label><input type="radio" name="q2" value="0"> 82 points</label><br>
+    <label><input type="radio" name="q2" value="1"> 96 points</label><br>
+    <label><input type="radio" name="q2" value="0"> 104 points</label><br>
 
-      <button onclick="calculateBMI()">Calculate BMI</button>
-      <p id="bmi-result"></p>
-    </div>
+    <!-- Q3 -->
+    <p><strong>3. Who is the <em>captain</em> of VKG?</strong></p>
+    <label><input type="radio" name="q3" value="1"> Kasssa</label><br>
+    <label><input type="radio" name="q3" value="0"> QQ</label><br>
+    <label><input type="radio" name="q3" value="0"> LqDuD</label><br>
+
+    <!-- Q4 -->
+    <p><strong>4. Which team did VKG defeat in the last match to secure the title?</strong></p>
+    <label><input type="radio" name="q4" value="0"> Gen.G</label><br>
+    <label><input type="radio" name="q4" value="1"> Wolves Esports</label><br>
+    <label><input type="radio" name="q4" value="0"> Ninjas in Pyjamas</label><br>
+
+    <!-- Q5 -->
+    <p><strong>5. When did the first VKG player join the roster?</strong></p>
+    <label><input type="radio" name="q5" value="1"> 19 Feb 2023</label><br>
+    <label><input type="radio" name="q5" value="0"> 19 May 2024</label><br>
+    <label><input type="radio" name="q5" value="0"> 25 Sep 2024</label><br><br>
+
+    <button type="button" onclick="gradeQuiz()">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <p id="quiz-result"></p>
+</div>
+
 
     <!-- 右侧联系表单 -->
     <div class="sidebar-right">
